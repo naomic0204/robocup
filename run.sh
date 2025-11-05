@@ -20,15 +20,11 @@ PIDS+=("$SERVER_PID")
 
 sleep 2
 
-for i in {1..11}; do
-    echo "(init MyTeam (version 19))" | rcssclient &> /dev/null &
-    PIDS+=("$!")
-done
+./helios-base/src/start.sh &> /dev/null &
+PIDS+=("$!")
 
-for i in {1..11}; do
-    echo "(init YourTeam (version 19))" | rcssclient &> /dev/null &
-    PIDS+=("$!")
-done
+./helios-base/src/start2.sh &> /dev/null &
+PIDS+=("$!")
 
 
 wait

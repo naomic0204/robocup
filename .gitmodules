@@ -1,0 +1,6 @@
+[submodule "helios-base"]
+	path = helios-base
+	url = https://github.com/helios-base/helios-base.git
+[submodule "librcsc"]
+	path = librcsc
+	url = https://github.com/helios-base/librcsc.git
